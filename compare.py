@@ -30,7 +30,7 @@ def cosine_similarity(v1, v2):
 def find_best_match(query_path):
     query_vec = extract_features(query_path)
 
-    conn = pymysql.connect(host="localhost", user="u800183464_familyhub", password="Nf1US9:b*", db="u800183464_familyhub")
+    conn = pymysql.connect(host="localhost", user="root", password="", db="famillyhub")
     cur = conn.cursor()
     cur.execute("SELECT id, name, description, image FROM items")
     rows = cur.fetchall()
